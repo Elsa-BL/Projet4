@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "chewie"; /*choix du mot clef */
+  src: url("../font/ARK-ES-DenseRegular.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+#div{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+
+    background-color: rgba(17, 180, 2, 0);
+}
+
+#divd{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 11;
+
+    background-color: rgba(33, 9, 78, 0);
+}
+
+
+
+#divt{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 12;
+
+    background-color: rgba(221, 182, 6, 0);
+}
+
+
+#div p{
+    font-size: 20px;
+    text-align: center;
+    line-height: 35%;
+    font-family: "chewie";
+    margin : -2px;
+}
+
+.interlignageP{
+   animation: ligne 5s infinite alternate ease-in-out;
+}
+
+@keyframes ligne {
+  0% {
+    line-height : 0.2;
+  }
+  100% {
+    line-height: 1.5;
+  }
+  0% {
+    line-height: 0.20;
+  }
+}
+
+#divd p{
+    font-size: 50px;
+    text-align: center;
+    line-height: 250%;
+    font-family: "chewie";
+    margin : -2px;
+}
+
+.interlignageP{
+   animation: ligne 10  s infinite alternate ease-in-out ;
+}
+
+@keyframes ligne {
+  0% {
+    line-height : 0.3;
+  }
+  100% {
+    line-height: 1.5;
+  }
+  0% {
+    line-height: 0.3;
+  }
+}
+
+
+#divt p{
+    font-size: 100px;
+    text-align: center;
+    line-height: 80%;
+    font-family: "chewie";
+    margin : -2px;
+}
+
+.classUn{
+    color :rgba(17, 131, 131, 0.667)
+}
+
+.classDeux{
+    color :rgba(33, 9, 78, 0.444)
+}
+
+.classTrois{
+    color :rgba(221, 182, 6, 0.919)
+}
+
+body {
+    
+    display: grid;
+    /* grid-template-columns: repeat(1, 120px); nbr + taille collones */
+    grid-auto-rows: 250px;
+    line-height : 200%;
+    mask-image: url('../masque2.png');
+    mask-repeat: no-repeat;
+    
+    mask-size: 100%;
+}
+
+
+header{
+    z-index:200;
+}
+
+.boutton{
+    width: 33%;
+    height: 50px;
+}
+
+.bout{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100vw;
+}

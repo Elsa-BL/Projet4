@@ -1,0 +1,144 @@
+
+
+@font-face {
+  font-family: "chewie"; /*choix du mot clef */
+  src: url("../font/ARK-ES-DenseRegular.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+@font-face {
+  font-family: "browny"; /*choix du mot clef */
+  src: url("../font/WonderType-Regular.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+
+@font-face {
+  font-family: "cookie"; 
+  src: url("../font/Monochrome.ttf");  
+}
+
+
+main{
+    display: none;
+}
+
+.petit{
+    color: #744711;
+    color: #FBE580;
+    margin-bottom: 15px;
+    font-family: "cookie";
+    text-align: right;
+}
+
+.grand{
+    color: #975600;
+    /* mix-blend-mode: difference; */
+    color: #93BD57;
+    filter : blur(2px);
+    font-size: 50px;
+    font-family: "chewie";
+    transform: rotate(360deg)
+    
+}
+
+.moyen{
+    color: rgb(81, 24, 65);
+    font-size: 30px;
+    font-family: "browny";
+
+    
+}
+
+.rotate{
+   animation-iteration-count: 1;
+    animation-duration: 500s;
+    animation-name: rotation;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(7200deg);
+  }
+}
+
+.AntiRotate{
+    animation-duration: 500s;
+    animation-name: antiRotate;
+}
+
+@keyframes antiRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-7200deg);
+  }
+
+}
+
+
+
+body {
+    
+    background-color: rgb(8, 33, 51);
+    display: grid;
+    grid-template-columns: repeat(40, 120px); /*nbr + taille collones */
+    grid-auto-rows: 250px;
+    line-height : 250%;
+    
+}
+
+.interlignage{
+    line-height : 15%;
+    transform: rotate(370deg)
+}   
+
+
+p:hover{
+    color: rgba(0, 0, 0, 0.795);
+    font-size: 50px;
+    filter : blur(0px);
+    transform: rotate(360deg) 2s ease-in-out;
+    text-shadow: 50px 50px 5px rgba(40, 126, 40, 0.466);
+    animation-play-state: paused;
+}
+
+p {
+  animation-play-state: running;
+}
+
+.blanc{
+  color: rgb(11, 119, 69);
+  z-index: 10;
+}
+
+#devant{
+  /* background-color: #FBE580; */
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+
+
+  display: grid;
+  grid-template-columns: repeat(40, 80px); /*nbr + taille collones */
+  grid-auto-rows: 100px;
+  line-height : 250%;
+}
+
+
+header{
+    z-index:200;
+}
+
+.boutton{
+    width: 33%;
+    height: 50px;
+}
+
+.bout{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100vw;
+}

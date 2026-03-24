@@ -1,0 +1,170 @@
+@font-face {
+  font-family: "font4"; /*choix du mot clef */
+  src: url("../font/FlorDeRuina-Fractura.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+@font-face {
+  font-family: "font5"; /*choix du mot clef */
+  src: url("../font/FlorDeRuina-Semilla.otf");  /*attention il faut bien ajouter '../' si besoin */
+}
+
+#div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* nbr + taille collones; */
+    grid-auto-rows: 250px;
+    position: absolute;
+    inset-block-start: 200px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+
+    background-color: rgba(14, 74, 9, 0);
+}
+
+#divd{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* nbr + taille collones; */
+    grid-auto-rows: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 11;
+
+    background-color: rgba(33, 9, 78, 0);
+}
+
+
+
+#divt{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* nbr + taille collones; */
+    grid-auto-rows: 250px;
+    position: absolute;
+    writing-mode: horizontal-tb;
+    inset-block-start: 40px;
+
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: 12;
+
+    background-color: rgba(221, 182, 6, 0);
+}
+
+
+
+
+.classUn{
+    color :rgba(222, 218, 210, 0.89);
+    font-family: "font4";
+    color :rgba(167, 106, 20, 0.512);
+    transform: rotate(-10deg);
+    font-size: 100px;
+    
+}
+
+.classDeux{
+    color :rgba(167, 106, 20, 0.222);
+    transform: rotate(30deg);
+    font-size: 1000px;
+    
+}
+
+.classTrois{
+    color :rgba(255, 255, 255, 0.919);
+    transform: rotate(-20deg);
+    font-family: "font5";
+    font-size: 20px;
+    animation-name: taille;
+}
+
+.taille{
+   animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-name: taille;
+}
+
+@keyframes taille {
+  0% {
+    font-size: 15px;
+  }
+  100% {
+    font-size: 30px;
+  }
+  0% {
+    font-size: 15px;
+  }
+}
+
+
+.taille2{
+   animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-name: taille2;
+}
+
+@keyframes taille2 {
+  0% {
+    font-size: 20px;
+  }
+  100% {
+    font-size: 35px;
+  }
+  0% {
+    font-size: 20px;
+  }
+}
+
+
+.taille3{
+   animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-name: taille3;
+}
+@keyframes taille3 {
+  0% {
+    font-size: 22px;
+  }
+  100% {
+    font-size: 5px;
+  }
+  0% {
+    font-size: 22px;
+  }
+}
+
+.taille4{
+    font-size: 14px;
+}
+
+body {
+    
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* nbr + taille collones; */
+    grid-auto-rows: 250px;
+    line-height : 200%;
+}
+
+main{
+    position: absolute;
+    inset-block-start: 50px;
+}
+
+
+header{
+    z-index:15;
+}
+
+.boutton{
+    width: 33%;
+    height: 50px;
+}
+
+.bout{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100vw;
+}
